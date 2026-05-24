@@ -1,8 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+int* fun()
+{
+    int* a = new int[5]; //to avoid segmentaton error, dynamic error
+    for (int i = 0; i < 5; i++)
+    {
+        cin>>a[i];
+    }
+    return a;
+}
+
+int main()
+{
+    int* x = fun();
+    for (int i = 0; i < 5; i++)
+    {
+        cout<<x[i]<<" ";
+    }
+    return 0;
+}
 // #include <bits/stdc++.h>
 // using namespace std;
-// int* fun()
-// {
-//     int* a = new int[5]; //to avoid segmentaton error, dynamic error
+// int* fun(){
+//     int a[5];
 //     for (int i = 0; i < 5; i++)
 //     {
 //         cin>>a[i];
@@ -14,26 +34,7 @@
 //     int* x = fun();
 //     for (int i = 0; i < 5; i++)
 //     {
-//         cout<<x[i]<<" ";
+//         cout<<x[i];
 //     }
 //     return 0;
 // }
-#include <bits/stdc++.h>
-using namespace std;
-int* fun(){
-    int a[5];
-    for (int i = 0; i < 5; i++)
-    {
-        cin>>a[i];
-    }
-    return a;
-}
-int main()
-{
-    int* x = fun();
-    for (int i = 0; i < 5; i++)
-    {
-        cout<<x[i];
-    }
-    return 0;
-}
