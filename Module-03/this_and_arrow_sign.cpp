@@ -7,19 +7,25 @@ public:
     int cls;
     double gpa;
 
-    Student(int r, int c, double g)
+    Student(int roll, int cls, double gpa)
     {
-        roll = r; 
-        cls = c;
-        gpa = g;
+        (*this).roll=roll; 
+        (*this).cls = cls; 
+        (*this).gpa = gpa;
+    }
+    // Student(int roll, int cls, double gpa)
+    // {
+    //     this->roll=roll; 
+    //     this->cls = cls; 
+    //     this->gpa = gpa;
         
 
-    }
+    // }
 };
 
 int main()
 {
-    Student rahim(45, 5, 3.9);
+    Student rahim(49, 5, 3.91);
     Student karim(9, 8, 3.5);
 
     cout << rahim.roll << " " << rahim.cls << " " << rahim.gpa << endl;

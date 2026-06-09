@@ -9,21 +9,19 @@ public:
 
     Student(int r, int c, double g)
     {
-        roll = r; 
+        roll = r;
         cls = c;
         gpa = g;
-        
-
     }
 };
 
 int main()
 {
-    Student rahim(45, 5, 3.9);
-    Student karim(9, 8, 3.5);
+    Student rahim(45, 5, 3.9); //static object
+    Student *karim = new Student(9, 8, 3.5);   //dynamic object
 
     cout << rahim.roll << " " << rahim.cls << " " << rahim.gpa << endl;
-    cout << karim.roll << " " << karim.cls << " " << karim.gpa << endl;
+    cout << karim->roll << " " << karim->cls << " " << karim->gpa << endl;
 
     return 0;
 }
